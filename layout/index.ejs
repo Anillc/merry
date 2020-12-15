@@ -1,0 +1,32 @@
+<div class="primary-screen">
+  <div class="main">
+    <div class="title">
+      <img class="avatar" src="<%- gravatar(theme.avatar, 512) %>">
+      <p><%= config.title %></p>
+    </div>
+    <ul>
+      <% for(link in theme.links){ %>
+      <li><a href="<%- url_for(theme.links[link]) %>"><%= link %></a></li>
+      <% } %>
+    </ul>
+  </div>
+  <div class="bar">
+    <div></div>
+    <div><i class="material-icons">expand_more</i></div>
+    <div><a href="<%- url_for('/atom.xml') %>"><i class="material-icons">rss_feed</i></a></div>
+  </div>
+</div>
+
+<div class="posts" data-aos="fade-up">
+  <% for(post of site.posts.data.reverse()){ %>
+  <div class="post">
+    <p class="title"><a href="<%- url_for(post.path) %>"><%= post.title %></a></p>
+    <div class="excerpt markdown-body"><%- post.excerpt %></div>
+  </div>
+  <% } %>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
