@@ -18,7 +18,11 @@
 </div>
 
 <div class="posts" data-aos="fade-up">
-  <% for(post of site.posts.reverse().data){ %>
+  <% let posts = site.posts.data;
+     posts.sort(function(a,b){
+       return b.date.unix() - a.date.unix()
+     })
+     for(post of posts){ %>
   <div class="post">
     <p class="title"><a href="<%- url_for(post.path) %>"><%= post.title %></a></p>
     <div class="excerpt markdown-body"><%- post.excerpt %></div>
