@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title><%= page.title ? page.title : config.title %></title>
-  <% if(config.ga){ %>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=<%= config.ga %>"></script>
+  <% if(theme.ga){ %>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<%= theme.ga %>"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -15,7 +15,7 @@
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-    gtag('config', '<%= config.ga %>');
+    gtag('config', '<%= theme.ga %>');
   </script>
   <% } %>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
