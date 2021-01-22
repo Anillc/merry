@@ -30,7 +30,13 @@
 
 <body>
   <%- body %>
-  <div class="markdown-body"><small>© 2020 <a href="<%- url_for('/') %>"><%= config.author %></a> - Powered By <a href="https://hexo.io">Hexo</a> And <a href="https://github.com/Anillc/merry">Merry</a></small></div>
+  <div class="markdown-body">
+    <% if(theme.footer){ %>
+    <%- theme.footer %>
+    <br />
+    <% } %>
+    <small>© 2020 <a href="<%- url_for('/') %>"><%= config.author %></a> - Powered By <a href="https://hexo.io">Hexo</a> And <a href="https://github.com/Anillc/merry">Merry</a></small>
+  </div>
 </body>
 
 </html>
