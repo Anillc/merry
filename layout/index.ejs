@@ -1,7 +1,7 @@
 <div class="primary-screen">
   <div class="main">
     <div class="title">
-      <img class="avatar" src="<%- theme.avatar %>">
+      <img class="avatar" src="<%- url_for(theme.avatar) %>">
       <p><%= config.title %></p>
     </div>
     <ul>
@@ -24,7 +24,7 @@
      })
      for(post of posts){ %>
   <div class="post">
-    <p class="title"><a href="<%- url_for(post.path) %>"><%= post.title %></a></p>
+    <div class="title markdown-body"><a href="<%- url_for(post.path) %>"><%= post.title %></a></div>
     <div class="excerpt markdown-body"><%- post.excerpt %></div>
   </div>
   <% } %>
