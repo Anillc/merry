@@ -1,7 +1,7 @@
 <div class="primary-screen">
   <div class="main">
     <div class="title">
-      <img class="avatar" src="<%- theme.avatar %>">
+      <img class="avatar" src="<%- url_for(theme.avatar) %>">
       <p><%= config.title %></p>
     </div>
     <ul>
@@ -20,11 +20,14 @@
 <div class="posts" data-aos="fade-up">
   <% let posts = site.posts.data;
      posts.sort(function(a,b){
-       return b.date.unix() - a.date.unix()
+       if(a.top){
+         return -1;
+       }
+       return b.date.unix() - a.date.unix();
      })
      for(post of posts){ %>
   <div class="post">
-    <p class="title"><a href="<%- url_for(post.path) %>"><%= post.title %></a></p>
+    <div class="title markdown-body"><a href="<%- url_for(post.path) %>"><%= post.title %></a></div>
     <div class="excerpt markdown-body"><%- post.excerpt %></div>
   </div>
   <% } %>

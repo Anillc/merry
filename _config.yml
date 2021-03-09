@@ -1,5 +1,5 @@
 # 此处为邮箱头像的url
-avatar:
+avatar: 
 
 # 标题下的链接
 links:
@@ -8,6 +8,10 @@ links:
 
 # Google Analytics
 #ga: ''
+# search verify（搜索验证）
+#google: 
+#baidu: 
+#bing: 
 
 # footer
-#footer: ''
+footer: ''

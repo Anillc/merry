@@ -9,18 +9,7 @@
   <%- open_graph({
     image: theme.avatar
   }) %>
-  <% if(theme.ga){ %>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=<%= theme.ga %>"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', '<%= theme.ga %>');
-  </script>
-  <% } %>
+  <%- partial('_others/site') %>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css/github-markdown.css">
