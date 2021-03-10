@@ -21,7 +21,7 @@
   <% let posts = site.posts.data;
      posts.sort(function(a,b){
        if(a.top == true){
-         return -1;
+         return -Infinity;
        }
        return b.date.unix() - a.date.unix();
      })
