@@ -20,8 +20,8 @@
 <div class="posts" data-aos="fade-up">
   <% let posts = site.posts.data;
      posts.sort(function(a,b){
-       if(a.top == true){
-         return -Infinity;
+       if(a.top){
+         return -1;
        }
        return b.date.unix() - a.date.unix();
      })

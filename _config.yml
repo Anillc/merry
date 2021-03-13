@@ -7,11 +7,34 @@ links:
 #  About: /about
 
 # Google Analytics
-#ga: ''
-# search verify（搜索验证）
-#google: 
-#baidu: 
-#bing: 
+ga: ''
+# Baidu Analytics
+bt: 
+# search verify
+google: 
+baidu: 
+bing: 
 
 # footer
 footer: ''
+
+# DisqusJS
+disqusjs:
+  shortname: 
+  sitename: 
+  api: 
+  apikey: 
+  admin:
+  adminlabel: 
+
+# Valine
+valine:
+  app_id: 
+  app_key: 
+  visitor: 
+
+# 仓库编辑
+github:
+  username:
+  repo: 
+  branches:

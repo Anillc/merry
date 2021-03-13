@@ -1,0 +1,17 @@
+  <div class="page">
+  <div class="title"><%- page.title %></div>
+<br /><div><i class="fa fa-calendar"> <%- date(page.date, null) %></i>
+                        <i class="fa fa-edit">
+                        <% const wordsCount = strip_html(page.content).length; %>
+                        <% if (wordsCount < 1500) { %>
+                            <%= wordsCount %>
+                        <% } else { %>
+                            ~<%= (wordsCount / 1000).toFixed(2) %>K
+                        <% } %>
+                        字</i> 
+<a href=javascript:history.go(-1);><i class="fa fa-angle-left" aria-hidden="true"> 返回</i></a></div>
+  <div class="content markdown-body">
+<%- page.content %>
+  <div class="markdown-body">
+<%- partial('_others/pl') %>
+</div>

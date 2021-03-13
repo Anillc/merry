@@ -7,6 +7,17 @@
     <% if (theme.bing) { %>
       <meta name="msvalidate.01" content="<%- theme.bing %>" />
     <% } %>
+    <% if (theme.bt) { %>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?<%- theme.bt %>";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <% } %>
 <% if(theme.ga){ %>
   <script async src="https://www.googletagmanager.com/gtag/js?id=<%= theme.ga %>"></script>
   <script>
