@@ -1,7 +1,7 @@
 # merry  
 
-极简hexo主题，真的啥也没有ww  
-支持latex  
+简单的 hexo 主题  
+支持 latex  
 
 ## Demo  
 
@@ -14,7 +14,7 @@ cd hexo
 git clone https://github.com/Anillc/merry.git themes/merry
 ```
 
-修改\_config.yml  
+修改 \_config.yml  
 
 ```yml
 theme: merry
