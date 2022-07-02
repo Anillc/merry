@@ -105,11 +105,11 @@ html, body {
   padding: 45px;
 }
 
-  .markdown-body a,
-  .markdown-body a:link,
-  .markdown-body a:visited,
-  .markdown-body a:hover,
-  .markdown-body a:active {
+.markdown-body a,
+.markdown-body a:link,
+.markdown-body a:visited,
+.markdown-body a:hover,
+.markdown-body a:active {
   text-decoration: underline;
   color: black;
 }
