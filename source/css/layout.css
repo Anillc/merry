@@ -27,7 +27,7 @@ html, body {
 
 .primary-screen .main {
   display: grid;
-  grid-template-colums: 100%;
+  grid-template-columns: 100%;
   grid-row-gap: 15px;
   justify-items: center;
   align-items: center;
@@ -122,17 +122,17 @@ html, body {
   .markdown-body a:hover,
   .markdown-body a:active {
   text-decoration: underline;
-  color: white;
+    color: white;
   }
 
   html, body {
-  width: 100%;
-  height: 100%;
-  background-color: black;
+    width: 100%;
+    height: 100%;
+    background-color: black;
   }
 
   p, .title {
-  color: white;
+    color: white;
   }
 }
 

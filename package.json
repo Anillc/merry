@@ -1,7 +1,7 @@
 {
   "name": "hexo-theme-merry",
   "version": "1.1.8",
-  "description": "一个极简hexo主题",
+  "description": "A simple theme of hexo",
   "repository": "https://github.com/Anillc/merry.git",
   "author": "anillc",
   "license": "MIT"
