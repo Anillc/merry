@@ -109,9 +109,31 @@ html, body {
 .markdown-body a:link,
 .markdown-body a:visited,
 .markdown-body a:hover,
-.markdown-bdoy a:active{
+.markdown-body a:active {
   text-decoration: underline;
   color: black;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .markdown-body a,
+  .markdown-body a:link,
+  .markdown-body a:visited,
+  .markdown-body a:hover,
+  .markdown-body a:active {
+  text-decoration: underline;
+  color: white;
+  }
+
+  html, body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  }
+
+  p, .title {
+  color: white;
+  }
 }
 
 @media (max-width: 767px) {
